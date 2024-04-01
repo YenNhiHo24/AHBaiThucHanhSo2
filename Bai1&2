@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void inBoi7HaiChuSo() {
+  int i;
+  for (i = 10; i <= 98; i++) {
+    if (i % 7 == 0) {
+      printf("%d ", i);
+    }
+  }
+}
+
+
+void chinhPhuongNhoHonN() {
+int n;
+  int count = 0; // Biến đếm số lượng số chính phương
+
+  // Nhập n từ bàn phím
+  printf("Nhập n: ");
+  scanf("%d", &n);
+
+  // Duyệt từ 1 đến sqrt(n)
+  for (int i = 1; i * i <= n; i++) {
+    // Kiểm tra nếu i là số chính phương
+    if (i * i <= n) {
+      count++; // Tăng số lượng số chính phương
+      printf("%d ", i * i); // In ra số chính phương
+    }
+  }
+
+  // In ra số lượng số chính phương
+  printf("\nCó %d số chính phương nhỏ hơn %d\n", count, n);
+
+  return;
+}
+
+
+int main() {
+  //inBoi7HaiChuSo();
+chinhPhuongNhoHonN();
+  return 0;
+}
